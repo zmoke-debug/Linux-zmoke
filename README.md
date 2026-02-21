@@ -106,7 +106,7 @@ kali-linux-network-services-lab/
 │   ├── README.md
 │   ├── config/
 │   └── scripts/
-├── experiment4/                 # 实验四：Shell 编程
+├── experiment4/                 # Shell 编程
 │   ├── parse_hotel.py           # JSON 解析脚本
 │   ├── send_to_ftp.sh           # FTP 自动上传
 │   ├── full_process.sh          # 一体化处理脚本
@@ -128,9 +128,7 @@ Python：3.9+
 
 一键安装
 bash
-# 克隆项目
-git clone https://github.com/your-repo/kali-linux-network-services-lab.git
-cd kali-linux-network-services-lab
+
 
 # 运行综合安装脚本
 sudo ./scripts/setup-all.sh
@@ -253,26 +251,6 @@ sudo journalctl -u dovecot -f
 bash
 sudo ufw allow from 192.168.1.0/24 to any port 21
 加密传输：使用 SFTP/FTPS/IMAPS 替代明文协议
-
-实验后清理：
-
-bash
-sudo systemctl stop vsftpd postfix dovecot
-sudo systemctl disable vsftpd postfix dovecot
-📝 实验报告要点
-每个实验完成后建议记录：
-
-配置截图
-
-服务状态输出
-
-端口监听情况
-
-测试结果（发送/接收）
-
-遇到的问题及解决方案
-
-客户端配置和测试截图
 
 📚 参考资料
 vsftpd 官方文档
