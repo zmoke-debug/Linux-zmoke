@@ -49,7 +49,7 @@ Flask：适合快速开发、API、学习实验
 
 提供一键安装脚本和客户端配置指南（Foxmail、Thunderbird）
 
-📕 四、Linux 命令与 Shell 编程实验（实验四）
+📕 四、Linux 命令与 Shell 编程实验
 模拟双节点环境（node1: FTP 服务器，node2: 数据处理节点）
 
 Python 脚本开发：解析 JSON 文件（hotel_db.json），提取酒店信息并保存为 CSV
@@ -91,31 +91,6 @@ Linux 系统管理与 Shell 编程练习
 📋 项目概述
 本项目是一个完整的 Kali Linux 网络服务搭建实验手册，涵盖了 FTP、Web（Tomcat/Flask）、邮件服务（Postfix+Dovecot）的配置与管理，以及 Linux 命令与 Shell 编程实践。适合用于网络服务配置学习、系统管理练习和自动化脚本开发。
 
-🗂️ 目录结构
-text
-kali-linux-network-services-lab/
-├── ftp-server/                 # FTP 服务搭建（vsftpd）
-│   ├── README.md               # FTP 服务说明
-│   ├── config/                  # 配置文件备份
-│   └── scripts/                 # 管理脚本
-├── web-server/                  # Web 服务搭建
-│   ├── tomcat/                   # Tomcat 配置
-│   ├── flask/                    # Flask 应用
-│   └── compare.md                # 技术对比
-├── mail-server/                 # 邮件服务（Postfix + Dovecot）
-│   ├── README.md
-│   ├── config/
-│   └── scripts/
-├── experiment4/                 # Shell 编程
-│   ├── parse_hotel.py           # JSON 解析脚本
-│   ├── send_to_ftp.sh           # FTP 自动上传
-│   ├── full_process.sh          # 一体化处理脚本
-│   └── sample_data/              # 示例数据
-├── docs/                         # 文档
-│   ├── setup-guide.md            # 安装指南
-│   ├── troubleshooting.md        # 故障排除
-│   └── security-tips.md          # 安全建议
-└── README.md                     # 本文件
 🚀 快速开始
 环境要求
 操作系统：Kali Linux 2024.x
@@ -166,7 +141,7 @@ POP3/IMAP：Dovecot（端口 110/143）
 
 日志：/var/log/mail.log
 
-4. 实验四：Shell 编程
+4. Shell 编程
 JSON 解析：Python 脚本提取酒店数据
 
 自动上传：Shell 脚本实现 FTP 传输
